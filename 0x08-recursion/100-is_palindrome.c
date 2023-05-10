@@ -34,7 +34,7 @@ return (check(s, 0, end - 1, end % 2));
 /**
  * check - checker for the palindrome
  * @s: string
- * start: int moves from right to left
+ * @start: int moves from right to left
  * @end: int moves from left to right
  * @mod: int
  * Return: 0 or 1
