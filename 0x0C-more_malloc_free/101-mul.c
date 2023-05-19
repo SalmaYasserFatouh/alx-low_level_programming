@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts -prints a string, followed by a new line,
+ * _puts - prints a string, followed by a new line,
  * @str: pointer to the string to print
  * Return: void
 */
@@ -15,13 +15,14 @@ void _puts(char *str)
 		_putchar(str[i]);
 		i++;
 	}
+
 }
 
 /**
  * _atoi - convert a string to an integer.
  * @s: char type string
  * Return: integer converted
-*/
+ */
 
 int _atoi(const char *s)
 {
@@ -49,7 +50,7 @@ int _atoi(const char *s)
  * print_int - prints an integer.
  * @n: int
  * Return: 0
-*/
+ */
 
 void print_int(unsigned long int n)
 {
@@ -70,7 +71,7 @@ void print_int(unsigned long int n)
  * @argc: int
  * @argv: list
  * Return: 0
-*/
+ */
 
 int main(int argc, char const *argv[])
 {
@@ -81,7 +82,7 @@ int main(int argc, char const *argv[])
 		_puts("Error ");
 		exit(98);
 	}
-	print_int(_atoi(argv[1]) * -atoi(argv[2]));
+	print_int(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
 
 	return (0);
